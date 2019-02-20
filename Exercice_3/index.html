@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
+    <title>Exercice 3</title>
+  </head>
+  <body ng-app="appVoiture">
+    <ul ng-controller="voitureCtrl">
+      <li ng-repeat="voiture in scopeVoiture" ng-if="voiture.couleur == 'verte'">
+        {{voiture.marque}} - {{voiture.couleur}}
+      </li>
+    </ul>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
